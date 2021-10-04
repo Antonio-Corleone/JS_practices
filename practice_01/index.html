@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- BS4  CSS -->
     <link
       rel="stylesheet"
@@ -16,11 +22,12 @@
     <title>Practice 01</title>
   </head>
   <body>
-
     <!-- Exercise 01 -->
     <div class="ex01 border border-primary container my-5">
       <h2 class="text-center pt-3">Exercise 01</h2>
-      <small class="form-text text-muted text-center pb-3">Salary staff calculate</small>
+      <small class="form-text text-muted text-center pb-3"
+        >Salary staff calculate</small
+      >
       <form class="container w-50">
         <div class="form-group">
           <label for="salary">Salary/day:</label>
@@ -33,20 +40,33 @@
         </div>
         <div class="form-group">
           <label for="days">Days</label>
-          <input type="number" class="form-control" id="days" placeholder=".." />
+          <input
+            type="number"
+            class="form-control"
+            id="days"
+            placeholder=".."
+          />
         </div>
-        <button type="button" class="btn btn-primary" id="btn_ex01">Calculate</button>
+        <button type="button" class="btn btn-primary" id="btn_ex01">
+          Calculate
+        </button>
       </form>
       <div class="bg-success w-50 mx-auto my-3 px-3 rounded">
         <i class="fas fa-hand-point-right text-warning px-2"></i>
-        <p class="text-dark font-weight-bold d-inline" id="result" style="height: 40px; line-height: 40px;"></p>
+        <p
+          class="text-dark font-weight-bold d-inline"
+          id="result"
+          style="height: 40px; line-height: 40px"
+        ></p>
       </div>
     </div>
 
     <!-- Exercise 02 -->
     <div class="ex01 border border-primary container my-5">
       <h2 class="text-center pt-3">Exercise 02</h2>
-      <small class="form-text text-muted text-center pb-3">Average calculate</small>
+      <small class="form-text text-muted text-center pb-3"
+        >Average calculate</small
+      >
       <form class="container w-50">
         <div class="row">
           <div class="col-4">
@@ -80,27 +100,105 @@
             </div>
           </div>
         </div>
-        <button type="button" class="btn btn-primary" id="btn_ex02">Calculate</button>
+        <button type="button" class="btn btn-primary" id="btn_ex02">
+          Calculate
+        </button>
       </form>
       <div class="bg-success w-50 mx-auto my-3 px-3 rounded">
         <i class="fas fa-hand-point-right text-warning px-2"></i>
-        <p class="text-dark font-weight-bold d-inline" id="result_ex02" style="height: 40px; line-height: 40px;"></p>
+        <p
+          class="text-dark font-weight-bold d-inline"
+          id="result_ex02"
+          style="height: 40px; line-height: 40px"
+        ></p>
       </div>
     </div>
     <!-- Exercise 03 -->
     <div class="ex01 border border-primary container my-5">
       <h2 class="text-center pt-3">Exercise 03</h2>
-      <small class="form-text text-muted text-center pb-3">Usd convert to vnd currency</small>
+      <small class="form-text text-muted text-center pb-3"
+        >Usd convert to vnd currency</small
+      >
       <form class="container w-50">
         <div class="form-group">
           <label for="usd">USD</label>
           <input type="number" class="form-control" id="usd" />
         </div>
-        <button type="button" class="btn btn-primary" id="btn_ex03">Convert</button>
+        <button type="button" class="btn btn-primary" id="btn_ex03">
+          Convert
+        </button>
       </form>
       <div class="bg-success w-50 mx-auto my-3 px-3 rounded">
         <i class="fas fa-hand-point-right text-warning px-2"></i>
-        <p class="text-dark font-weight-bold d-inline" id="result_ex03" style="height: 40px; line-height: 40px;"></p>
+        <p
+          class="text-dark font-weight-bold d-inline"
+          id="result_ex03"
+          style="height: 40px; line-height: 40px"
+        ></p>
+      </div>
+    </div>
+    <!-- Exercise 04 -->
+    <div class="ex01 border border-primary container my-5">
+      <h2 class="text-center pt-3">Exercise 04</h2>
+      <small class="form-text text-muted text-center pb-3"
+        >Calculating area and perimeter of the rectangle</small
+      >
+      <form class="container w-50">
+        <div class="form-group">
+          <label for="width">Width</label>
+          <input type="number" class="form-control" id="width" />
+        </div>
+        <div class="form-group">
+          <label for="height">Height</label>
+          <input type="number" class="form-control" id="height" />
+        </div>
+        <button type="button" class="btn btn-primary" id="btn_ex04">
+          Calculate
+        </button>
+      </form>
+      <div class="bg-success w-50 mx-auto my-3 px-3 rounded">
+        <div class="row">
+          <div class="col-6">
+            <i class="fas fa-hand-point-right text-warning px-2"></i>
+            <p
+              class="text-dark font-weight-bold d-inline"
+              id="result_ex04-1"
+              style="height: 40px; line-height: 40px"
+            ></p>
+          </div>
+          <div class="col-6">
+            <i class="fas fa-hand-point-right text-warning px-2"></i>
+            <p
+              class="text-dark font-weight-bold d-inline"
+              id="result_ex04-2"
+              style="height: 40px; line-height: 40px"
+            ></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Exercise 05 -->
+    <div class="ex01 border border-primary container my-5">
+      <h2 class="text-center pt-3">Exercise 05</h2>
+      <small class="form-text text-muted text-center pb-3"
+        >Calculating sum-index of the number</small
+      >
+      <form class="container w-50">
+        <div class="form-group">
+          <label for="number">Number</label>
+          <input type="number" class="form-control" id="number" />
+        </div>
+        <button type="button" class="btn btn-primary" id="btn_ex05">
+          Calculate
+        </button>
+      </form>
+      <div class="bg-success w-50 mx-auto my-3 px-3 rounded">
+        <i class="fas fa-hand-point-right text-warning px-2"></i>
+        <p
+          class="text-dark font-weight-bold d-inline"
+          id="result_ex05"
+          style="height: 40px; line-height: 40px"
+        ></p>
       </div>
     </div>
     <!-- BS4 JS -->
@@ -120,5 +218,9 @@
     <script src="./exercise02.js"></script>
     <!-- Ex03 -->
     <script src="./exercise03.js"></script>
+    <!-- Ex04 -->
+    <script src="./exercise04.js"></script>
+    <!-- Ex05 -->
+    <script src="./exercise05.js"></script>
   </body>
 </html>
