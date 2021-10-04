@@ -15,7 +15,7 @@ function salaryCalc(){
   var salaryPerDay = document.getElementById("salary").value;
   var day = document.getElementById("days").value;
   var result = salaryPerDay * day;
-  var text = document.getElementById("result");
-  text.innerHTML = "Result: " + result;
+  var text_ex01 = document.getElementById("result");
+  text_ex01.innerHTML = "Result: " + result;
 }
 document.getElementById("btn_ex01").onclick = salaryCalc;
