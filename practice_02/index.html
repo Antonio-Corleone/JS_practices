@@ -162,6 +162,57 @@
         ></p>
       </div>
     </div>
+    <!-- Exercise 05 -->
+    <div class="ex01 border border-primary container my-5">
+      <h2 class="text-center pt-3">Exercise 05</h2>
+      <small class="form-text text-muted text-center pb-3"
+        >Counting previous day and next day</small
+      >
+      <form class="container w-50">
+        <div class="row">
+          <div class="col-4">
+            <div class="form-group">
+              <label for="day">Day:</label>
+              <input type="number" class="form-control" id="day" />
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label for="month">Month:</label>
+              <input type="number" class="form-control" id="month" />
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label for="year">Year:</label>
+              <input type="number" class="form-control" id="year" />
+            </div>
+          </div>
+        </div>
+        <div class="group-btn">
+          <div class="row">
+            <div class="col-6">
+              <button type="button" class="btn btn-secondary" id="btn_ex051">
+                Previous day
+              </button>
+            </div>
+            <div class="col-6">
+              <button type="button" class="btn btn-primary" id="btn_ex052">
+                Next day
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="bg-success w-50 mx-auto my-3 px-3 rounded">
+        <i class="fas fa-hand-point-right text-warning px-2"></i>
+        <p
+          class="text-dark font-weight-bold d-inline"
+          id="resultEx05"
+          style="height: 40px; line-height: 40px"
+        ></p>
+      </div>
+    </div>
     <!-- BS4 JS -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -177,5 +228,6 @@
     <script src="./exercise02.js"></script>
     <script src="./exercise03.js"></script>
     <script src="./exercise04.js"></script>
+    <script src="./exercise05.js"></script>
   </body>
 </html>
