@@ -3,18 +3,10 @@
  * Khối 2:
  *  B1: Tìm tới thẻ và lấy giá trị được nhập gán vào 3 biến edge1, edge2, edge3
  *  B2: Ép kiểu number
- *  B3: if Kiểm tra nếu tam giác có 3 cạnh đều bằng nhau --> tam giác đều
- *         Kiểm tra nếu tam giá có 2 cạnh bằng nhay --> tam giác cân
- *         Tìm cạnh huyền của tam giác vuông gán vào edge3
- *           So sánh edge3 < edge1
- *                           --> true: hoán đổi giá trị edge1 với edge3
- *                           --> false: không làm gì cả
- *           So sánh edge3 < edge2
- *                           --> true: hoán đổi giá trị edge2 với edge3
- *                           --> false: không làm gì cả         
- *         Kiểm tra điều kiện pow(edge3) = pow(edge1) + pow(edge2)
- *                           --> true: tam giá vuông
- *         Trường hợp còn lại xuất kết quả là: Không phải là tam giác đặc biệt
+ *  B3: if Kiểm tra nếu tam giác đều: có 3 cạnh đều bằng nhau
+ *         Kiểm tra nếu tam giá cân: có 2 cạnh bằng nhau   
+ *         Kiểm tra điều kiện tam giác vuông: pow(edge3) = pow(edge1) + pow(edge2) || pow(edge1) = pow(edge2) + pow(edge3) || pow(edge2) = pow(edge1) + pow(edge3)
+ *         Trường hợp còn lại xuất kết quả là: Tam giác thường
  * Khối 3: Xuất ra kết quả thông báo loại tam giác là vuông/ cân/ đều/ tam giác thường
  */
 function triangleType() {
