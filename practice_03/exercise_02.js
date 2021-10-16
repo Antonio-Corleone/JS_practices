@@ -16,26 +16,26 @@ function electricityCharges() {
   var txtEx02 = document.getElementById("resultEx02");
   if (0 < kW && kW <= 50) {
     total_price = kW * kW_level1;
-    txtEx02.innerHTML = "Customer name: " + name + ", " + "Charges: " + Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND', currencyDisplay: 'narrowSymbol'}).format(total_price);
+    txtEx02.innerHTML = "Tên khách hàng: " + name + ", " + "Số tiền: " + Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND', currencyDisplay: 'narrowSymbol'}).format(total_price);
   }
   else if(50 < kW && kW <= 100){
     total_price = 50 * kW_level1 + (kW - 50) * kW_level2;
-    txtEx02.innerHTML = "Customer name: " + name + ", " + "Charges: " + Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND', currencyDisplay: 'narrowSymbol'}).format(total_price);
+    txtEx02.innerHTML = "Tên khách hàng: " + name + ", " + "Số tiền: " + Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND', currencyDisplay: 'narrowSymbol'}).format(total_price);
   }
   else if(100 < kW && kW <= 200){
     total_price = 50 * kW_level1 + 50 * kW_level2 + (kW - 100) * kW_level3;
-    txtEx02.innerHTML = "Customer name: " + name + ", " + "Charges: " + Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND', currencyDisplay: 'narrowSymbol'}).format(total_price);
+    txtEx02.innerHTML = "Tên khách hàng: " + name + ", " + "Số tiền: " + Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND', currencyDisplay: 'narrowSymbol'}).format(total_price);
   }
   else if(200 < kW && kW <= 350){
     total_price = 50 * kW_level1 + 50 * kW_level2 + 100 * kW_level3 + (kW - 200) * kW_level4;
-    txtEx02.innerHTML = "Customer name: " + name + ", " + "Charges: " + Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND', currencyDisplay: 'narrowSymbol'}).format(total_price);
+    txtEx02.innerHTML = "Tên khách hàng: " + name + ", " + "Số tiền: " + Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND', currencyDisplay: 'narrowSymbol'}).format(total_price);
   }
   else if(kW > 350){
     total_price = 50 * kW_level1 + 50 * kW_level2 + 100 * kW_level3 + 150 * kW_level4 + (kW - 350) * kW_level5;
-    txtEx02.innerHTML = "Customer name: " + name + ", " + "Charges: " + Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND', currencyDisplay: 'narrowSymbol'}).format(total_price);
+    txtEx02.innerHTML = "Tên khách hàng: " + name + ", " + "Số tiền: " + Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND', currencyDisplay: 'narrowSymbol'}).format(total_price);
   }
   else{
-    txtEx02.innerHTML = "Invalid kW value";
+    txtEx02.innerHTML = "Số kW không hợp lệ";
   }
 }
 document.getElementById("btn_ex02").onclick = electricityCharges;

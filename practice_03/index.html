@@ -26,29 +26,29 @@
     <div class="ex01 border border-primary container my-5">
       <h2 class="text-center pt-3">Exercise 01</h2>
       <small class="form-text text-muted text-center pb-3"
-        >Entrance exam management</small
+        >Quản lý tuyển sinh</small
       >
       <form class="container w-50">
         <div class="row">
           <div class="col-4 form-group">
-            <label for="sub1">Subject 1:</label>
+            <label for="sub1">Môn học 1:</label>
             <input type="number" class="form-control" id="sub1" />
           </div>
           <div class="col-4 form-group">
-            <label for="sub2">Subject 2:</label>
+            <label for="sub2">Môn học 2:</label>
             <input type="number" class="form-control" id="sub2" />
           </div>
           <div class="col-4 form-group">
-            <label for="sub3">Subject 3:</label>
+            <label for="sub3">Môn học 3:</label>
             <input type="number" class="form-control" id="sub3" />
           </div>
         </div>
         <div class="row">
           <div class="col-4">
             <div class="form-group">
-              <label for="area">Area</label>
+              <label for="area">Khu vực</label>
               <select class="form-control" id="area">
-                <option>Choose area:</option>
+                <option>Chọn khu vực:</option>
                 <option value="X">X</option>
                 <option value="A">A</option>
                 <option value="B">B</option>
@@ -58,9 +58,9 @@
           </div>
           <div class="col-4">
             <div class="form-group">
-              <label for="priority">Priority</label>
+              <label for="priority">Chọn đối tượng</label>
               <select class="form-control" id="priority">
-                <option value="">Priority object</option>
+                <option value="">Loại ưu tiên</option>
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -70,13 +70,13 @@
           </div>
           <div class="col-4">
             <div class="form-group">
-              <label for="sub1">Pass Point:</label>
+              <label for="sub1">Điểm chuẩn:</label>
               <input type="number" class="form-control" id="passPoint" />
             </div>
           </div>
         </div>
         <button type="button" class="btn btn-primary" id="btn_ex01">
-          Result
+          Kết quả
         </button>
       </form>
       <div class="bg-success w-50 mx-auto my-3 px-3 rounded">
@@ -92,13 +92,18 @@
     <div class="ex01 border border-primary container my-5">
       <h2 class="text-center pt-3">Exercise 02</h2>
       <small class="form-text text-muted text-center pb-3"
-        >Calculate electricity charges</small
+        >Tính tiền điện</small
       >
       <form class="container w-50">
         <div class="row">
           <div class="col-6 form-group">
-            <label for="name">Customer:</label>
-            <input type="text" class="form-control" id="name" placeholder="Customer name" />
+            <label for="name">Khách hàng:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Nhập họ tên.."
+            />
           </div>
           <div class="col-6 form-group">
             <label for="kW">kW:</label>
@@ -106,7 +111,7 @@
           </div>
         </div>
         <button type="button" class="btn btn-primary" id="btn_ex02">
-          Result
+          Tính
         </button>
       </form>
       <div class="bg-success w-50 mx-auto my-3 px-3 rounded">
@@ -114,6 +119,55 @@
         <p
           class="text-dark font-weight-bold d-inline"
           id="resultEx02"
+          style="height: 40px; line-height: 40px"
+        ></p>
+      </div>
+    </div>
+    <!-- Exercise 03 -->
+    <div class="ex01 border border-primary container my-5">
+      <h2 class="text-center pt-3">Exercise 03</h2>
+      <small class="form-text text-muted text-center pb-3"
+        >Tính thu nhập chịu thuế</small
+      >
+      <form class="container w-50">
+        <div class="row">
+          <div class="col-6 form-group">
+            <label for="fullname">Full name:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="fullname"
+              placeholder="Customer name"
+            />
+          </div>
+          <div class="col-6 form-group">
+            <label for="thuNhap">Thu nhập:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="thuNhap"
+              placeholder="Tổng thu nhập năm:"
+            />
+          </div>
+          <div class="col-6 form-group">
+            <label for="songuoi">Người phụ thuộc :</label>
+            <input
+              type="number"
+              class="form-control"
+              id="songuoi"
+              placeholder="Số người phụ thuộc:"
+            />
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary" id="btn_ex03">
+          Tính tiền thuế
+        </button>
+      </form>
+      <div class="bg-success w-50 mx-auto my-3 px-3 rounded">
+        <i class="fas fa-hand-point-right text-warning px-2"></i>
+        <p
+          class="text-dark font-weight-bold d-inline"
+          id="resultEx03"
           style="height: 40px; line-height: 40px"
         ></p>
       </div>

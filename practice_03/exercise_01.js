@@ -22,14 +22,14 @@ function examPassCalc() {
   totalPoint = sub1 + sub2 + sub3 + priorityPointCalc(area, priority);
   // So sánh với điểm chuẩn và hiện kết quả lên giao diện
   if(sub1 <= 0 || sub2 <= 0 || sub3 <= 0){
-    txtEx01.innerHTML = "Failed !!!" +"<br>" + "Because there is a subject with a score of 0";
+    txtEx01.innerHTML = "Rớt !!!" +"<br>" + "Vì lý do có môn bị điểm 0";
   }
   else{
     if(totalPoint >= passPoint){
-      txtEx01.innerHTML = "Passed !!!" + "<br>" + "The total points is: " + totalPoint;
+      txtEx01.innerHTML = "Đậu !!!" + "<br>" + "Tổng điểm: " + totalPoint;
     }
     else{
-      txtEx01.innerHTML = "Failed !!!" + "<br>" + "The total points is: " + totalPoint;
+      txtEx01.innerHTML = "Rớt !!!" + "<br>" + "Tổng điểm: " + totalPoint;
     }
   }
 }
