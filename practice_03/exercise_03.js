@@ -25,7 +25,7 @@ function tinhThue() {
   }
   else{
     ketQua = tinhThueSuat(thuNhapChiuThue);
-    txtEx03.innerHTML = "Họ tên: " + fullName + ", Tiền thuế thu nhập cá nhân: " + Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND', currencyDisplay: 'narrowSymbol'}).format(ketQua);
+    txtEx03.innerHTML = "Họ tên: " + fullName + '<br>' + "Tiền thuế thu nhập cá nhân: " + Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND', currencyDisplay: 'narrowSymbol'}).format(ketQua);
   }
 }
 
