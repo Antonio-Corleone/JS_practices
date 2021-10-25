@@ -1,5 +1,5 @@
-var resulteX03 = document.querySelector("#resultEx03");
 function timSoNhoNhat(){
+  var resulteX03 = document.querySelector("#resultEx03");
   var viTri = 0;
   var min = myArr[viTri];
   for (var i = 1; i < myArr.length; i++){

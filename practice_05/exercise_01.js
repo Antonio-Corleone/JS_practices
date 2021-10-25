@@ -1,6 +1,6 @@
-var resulteX01 = document.querySelector("#resultEx01");
 //Tính tổng số dương
 function tinhTongSoDuong(){
+  var resulteX01 = document.querySelector("#resultEx01");
   var sum = 0;
   for (var i = 0; i < myArr.length; i++){
     //Kiểm tra số dương

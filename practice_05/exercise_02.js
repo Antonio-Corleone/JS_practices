@@ -1,5 +1,5 @@
-var resulteX02 = document.querySelector("#resultEx02");
 function demSoDuong() {
+  var resulteX02 = document.querySelector("#resultEx02");
   var count = 0;
   for (var i = 0; i < myArr.length; i++) {
     //Kiểm tra số dương
